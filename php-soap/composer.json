@@ -1,0 +1,27 @@
+{
+    "name": "php/epayco_soap",
+    "description": "epayco soap",
+    "type": "project",
+    "require": {
+        "econea/nusoap": "^0.9.12",
+        "doctrine/orm": "^2.13",
+        "vlucas/phpdotenv": "^5.4",
+        "symfony/cache": "^6.1",
+        "doctrine/annotations": "^1.13"
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "Willman Rojas",
+        "email": "willman.rojas@live.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "soap\\entities": "/entities",
+            "soap\\repositories": "\\repositories",
+            "soap": "."
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
